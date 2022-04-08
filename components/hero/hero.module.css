@@ -1,0 +1,92 @@
+.hero {
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.desc {
+  font-size: 18px;
+  font-weight: 300;
+  color: #a0a0a0;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactBtn {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 60%;
+  background-color: #0f64f2;
+  padding: 8px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 0 4px 20px -5px #0f64f2;
+  transition: all 200ms ease-in-out;
+}
+
+.contactBtn:hover {
+  background-color: #0a4ec2;
+}
+
+.contactList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* mobile design */
+@media (max-width: 40em) {
+  .hero {
+    width: 90%;
+  }
+  .title {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+}

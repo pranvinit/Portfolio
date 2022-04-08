@@ -2,3 +2,13 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+.main {
+  position: relative;
+  min-height: calc(100vh - 140px);
+}
+
+.appWrapper {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}

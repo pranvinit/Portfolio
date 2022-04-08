@@ -48,42 +48,42 @@ export default function Navbar() {
           ref={primaryNav}
         >
           <li
-            className={`${styles.navLi} ${
+            className={`${styles.item} ${
               router.asPath === "/" && styles.active
             }`}
           >
             <Link href="/">Home</Link>
           </li>
           <li
-            className={`${styles.navLi} ${
+            className={`${styles.item} ${
               router.asPath === "/#about" && styles.active
             }`}
           >
             <Link href="#about">About</Link>
           </li>
           <li
-            className={`${styles.navLi} ${
+            className={`${styles.item} ${
               router.asPath === "/#skills" && styles.active
             }`}
           >
             <Link href="#skills">Skills</Link>
           </li>
           <li
-            className={`${styles.navLi} ${
+            className={`${styles.item} ${
               router.asPath === "/#qualifications" && styles.active
             }`}
           >
             <Link href="#qualifications">Qualifications</Link>
           </li>
           <li
-            className={`${styles.navLi} ${
+            className={`${styles.item} ${
               router.asPath === "/#projects" && styles.active
             }`}
           >
             <Link href="#projects">Projects</Link>
           </li>
           <li
-            className={`${styles.navLi} ${
+            className={`${styles.item} ${
               router.asPath === "/contact" && styles.active
             }`}
           >

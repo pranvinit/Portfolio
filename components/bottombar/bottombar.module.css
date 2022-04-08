@@ -4,9 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   z-index: 999;
+  background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -16,7 +17,7 @@
   color: #000;
 }
 
-.socialsList {
+.socialList {
   margin: 0;
   padding: 0;
   list-style: none;

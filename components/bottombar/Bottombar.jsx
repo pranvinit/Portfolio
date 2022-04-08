@@ -10,7 +10,7 @@ export default function Bottombar() {
         </span>
       </div>
       <div className={styles.bottombarRight}>
-        <ul className={styles.socialsList}>
+        <ul className={styles.socialList}>
           <li className={styles.social}>
             <a href="https://www.instagram.com/_pranv_/" target="_blank">
               <Instagram />
