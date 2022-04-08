@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   z-index: 999;
   background-color: #fff;
@@ -36,8 +36,10 @@
   color: #000;
 }
 
-@media only screen and (max-width: 600px) {
-  .socialsList {
+/* mobile design */
+
+@media (max-width: 40em) {
+  .bottombarRight {
     display: none;
   }
 }

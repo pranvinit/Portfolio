@@ -1,0 +1,27 @@
+.skillsContainer {
+  width: 80%;
+  border-radius: 10px;
+  background-color: #e0edff;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.skillsWrapper {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+/* mobile design */
+
+@media (max-width: 40em) {
+  .skillsContainer {
+    width: 90%;
+  }
+  .skillsWrapper {
+    padding: 30px 20px;
+    gap: 30px;
+  }
+}

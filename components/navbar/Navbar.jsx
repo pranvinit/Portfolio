@@ -82,13 +82,6 @@ export default function Navbar() {
           >
             <Link href="#projects">Projects</Link>
           </li>
-          <li
-            className={`${styles.item} ${
-              router.asPath === "/contact" && styles.active
-            }`}
-          >
-            <Link href="/contact">Contact</Link>
-          </li>
         </ul>
       </nav>
     </div>

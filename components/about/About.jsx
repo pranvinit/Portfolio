@@ -3,7 +3,7 @@ import { Article } from "@mui/icons-material";
 
 export default function About() {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="about">
       <div className={styles.wrapper}>
         <div className={styles.top}>
           <span className={styles.title}>About</span>
