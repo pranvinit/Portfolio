@@ -1,0 +1,42 @@
+.bottombar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.bottombarText {
+  flex: 1;
+  font-size: 20px;
+  color: #000;
+}
+
+.socialsList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 200px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.social a {
+  text-decoration: none;
+  color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .socialsList {
+    display: none;
+  }
+}

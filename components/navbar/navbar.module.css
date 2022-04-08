@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #191627;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .mobileNavToggle {
@@ -31,7 +31,6 @@
 }
 .logo {
   margin-left: 20px;
-  color: #fff;
   font-size: 1.25rem;
   font-weight: 500;
   cursor: pointer;
@@ -39,40 +38,37 @@
 
 .primaryNavigation {
   margin-right: 20px;
-  background: hsl(0 0% 0%/ 0.75);
+  background: #c8c8c840;
+  backdrop-filter: blur(1rem);
   display: flex;
   gap: var(--gap, 50px);
   padding: 10px 20px;
   border-radius: 5px;
 }
 
-/* checking support for backdrop filter */
-@supports (backdrop-filter: blur(1rem)) {
-  .primaryNavigation {
-    background: hsl(0 0% 100%/ 0.15);
-    backdrop-filter: blur(1rem);
-  }
-}
-
 .navLi a {
+  color: #000;
   text-decoration: none;
   font-size: clamp(0.95, 20px, 1.15rem);
-  color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+.active {
+  border-bottom: 2px solid #0f64f2;
+  width: max-content;
 }
 
 /* mobile design */
 
 @media (max-width: 40em) {
   .primaryNavigation {
-    background-color: #191627;
     margin-right: 0;
     border-radius: 0;
     --gap: 2rem;
     position: fixed;
     z-index: 100;
-    inset: 0 0 0 20%;
+    inset: 0 0 0 30%;
     flex-direction: column;
     padding: min(30vh, 10rem) 2rem;
     transform: translateX(100%);
@@ -84,17 +80,17 @@
   .mobileNavToggle {
     display: block;
     border: 0;
+    background-color: transparent;
     position: absolute;
     width: 2rem;
     aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
     z-index: 999;
-    background: url("/assets/icon-hamburger.svg") center center no-repeat;
     cursor: pointer;
-  }
-  .mobileNavToggle[aria-expanded="true"] {
-    background-image: url("/assets/icon-close.svg");
   }
 }
