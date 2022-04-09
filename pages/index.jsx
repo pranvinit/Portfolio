@@ -13,6 +13,11 @@ import { SKILLS } from "../source";
 export default function Home() {
   return (
     <div className={styles.home}>
+      <div className={styles.videoWrapper}>
+        <video autoPlay loop muted className={styles.heroBGVideo}>
+          <source src="/assets/bg-videos/hero-bg.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div className={styles.heroContainer}>
         <Hero />
         <span

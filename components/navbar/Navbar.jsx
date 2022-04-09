@@ -51,6 +51,7 @@ export default function Navbar() {
             className={`${styles.item} ${
               router.asPath === "/" && styles.active
             }`}
+            onClick={handleToggle}
           >
             <Link href="/">Home</Link>
           </li>
@@ -58,6 +59,7 @@ export default function Navbar() {
             className={`${styles.item} ${
               router.asPath === "/#about" && styles.active
             }`}
+            onClick={handleToggle}
           >
             <Link href="#about">About</Link>
           </li>
@@ -65,6 +67,7 @@ export default function Navbar() {
             className={`${styles.item} ${
               router.asPath === "/#skills" && styles.active
             }`}
+            onClick={handleToggle}
           >
             <Link href="#skills">Skills</Link>
           </li>
@@ -72,6 +75,7 @@ export default function Navbar() {
             className={`${styles.item} ${
               router.asPath === "/#qualifications" && styles.active
             }`}
+            onClick={handleToggle}
           >
             <Link href="#qualifications">Qualifications</Link>
           </li>
@@ -79,6 +83,7 @@ export default function Navbar() {
             className={`${styles.item} ${
               router.asPath === "/#projects" && styles.active
             }`}
+            onClick={handleToggle}
           >
             <Link href="#projects">Projects</Link>
           </li>

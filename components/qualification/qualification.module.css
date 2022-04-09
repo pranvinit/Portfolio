@@ -4,7 +4,7 @@
   width: 80%;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .top {
@@ -46,7 +46,7 @@
   flex-direction: column;
   border-radius: 10px;
   align-self: flex-end;
-  background-color: #fdffe0;
+  background-color: #fff2e0;
   transition: all 200ms ease-in-out;
 }
 
