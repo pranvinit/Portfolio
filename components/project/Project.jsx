@@ -1,6 +1,7 @@
 import styles from "./project.module.css";
+import { GitHub, Link } from "@mui/icons-material";
 
-export default function Project() {
+export default function Project({ project }) {
   return (
     <div className={styles.project}>
       <div className={styles.top}>
@@ -10,7 +11,7 @@ export default function Project() {
           className={styles.projectImg}
         />
         <div className={styles.topText}>
-          <span className={styles.title}>Lorem, ipsum</span>
+          <span className={styles.title}>{project.title}</span>
           <span className={styles.desc}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             nemo vero unde repellat neque, et rerum numquam quisquam blanditiis
@@ -19,8 +20,15 @@ export default function Project() {
         </div>
       </div>
       <div className={styles.bottom}>
-        <div className={styles.bottomLeft}>Batches Batches Batches</div>
-        <div className={styles.bottomRight}>Github &amp; Hosted Links</div>
+        <div className={styles.bottomLeft}>
+          <span className={styles.batch}>MERN</span>
+          <span className={styles.batch}>Redux</span>
+          <span className={styles.batch}>Firebase</span>
+        </div>
+        <div className={styles.bottomRight}>
+          <GitHub fontSize="large" className={styles.linkIcon} />
+          <Link fontSize="large" className={styles.linkIcon} />
+        </div>
       </div>
     </div>
   );

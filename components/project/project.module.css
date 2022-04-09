@@ -5,18 +5,18 @@
   justify-content: center;
   padding: 20px;
   gap: 20px;
+  cursor: pointer;
 }
 
 .top {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 50px;
-  background-color: lightblue;
 }
 
 .projectImg {
-  width: 30%;
+  width: 40%;
 }
 
 .topText {
@@ -33,9 +33,94 @@
 .desc {
   font-weight: 300;
   font-size: 18px;
-  color: #a0a0a0;
+  color: #333;
 }
 
 .bottom {
-  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottomLeft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 40%;
+}
+
+.batch {
+  padding: 4px 0;
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #aeaeb8;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.bottomRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.linkIcon {
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.linkIcon:hover {
+  color: #0f64f2;
+}
+
+/* mobile design */
+@media (max-width: 40em) {
+  .project {
+    width: 100%;
+    padding: 0;
+  }
+
+  .top {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .projectImg {
+    width: 90%;
+  }
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .bottomLeft {
+    width: 90%;
+  }
+
+  .batch {
+    width: inherit;
+    padding: 4px 8px;
+  }
+
+  .title,
+  .desc {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
 }

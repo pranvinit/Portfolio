@@ -84,6 +84,7 @@
 
 .projectsContainer {
   background-color: #ffe3e0;
+  margin-bottom: 50px;
 }
 
 /* mobile design */
@@ -91,7 +92,8 @@
 @media (max-width: 40em) {
   .skillsContainer,
   .qualificationContainer,
-  .projectsContainer {
+  .projectsContainer,
+  .aboutContainer {
     width: 90%;
   }
   .wrapper {

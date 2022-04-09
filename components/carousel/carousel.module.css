@@ -1,0 +1,56 @@
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #e3e0ff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+.prevArrow,
+.nextArrow {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.nextArrow {
+  left: inherit;
+  right: 20px;
+}
+
+.prevArrow:hover,
+.nextArrow:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* mobile design */
+@media (max-width: 40em) {
+  .carousel {
+    width: 100%;
+    padding-block: 30px;
+  }
+
+  .prevArrow,
+  .nextArrow {
+    width: 40px;
+    height: 40px;
+  }
+}

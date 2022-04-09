@@ -26,7 +26,7 @@ export default function Home({ projects, nbHits }) {
         <Hero />
         <span
           className={styles.scrollDownText}
-          onClick={() => window.scrollTo(0, 700)}
+          onClick={() => window.scrollTo(0, 650)}
         >
           <KeyboardDoubleArrowDown fontSize="large" /> Scroll Down
         </span>
@@ -59,9 +59,7 @@ export default function Home({ projects, nbHits }) {
           <div className={styles.top}>
             <span className={styles.title}>Projects</span>
             <span className={styles.desc}>My recent projects</span>
-            <div className={styles.carouselContainer}>
-              <Carousel data={projects} nbHits={nbHits} />
-            </div>
+            <Carousel data={projects} nbHits={nbHits} />
           </div>
         </div>
       </div>
