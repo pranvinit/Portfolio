@@ -1,4 +1,29 @@
-.skillsContainer {
+.heroContainer {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.scrollDownText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 400ms ease-in-out;
+}
+
+.scrollDownText:hover {
+  transform: translateY(10px);
+}
+
+.skillsContainer,
+.qualificationContainer {
   width: 80%;
   border-radius: 10px;
   background-color: #e0edff;
@@ -6,21 +31,44 @@
   margin-top: 50px;
 }
 
-.skillsWrapper {
-  padding: 50px;
+.wrapper {
+  padding: 30px 50px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   align-items: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.desc {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #a0a0a0;
+}
+
+.qualificationContainer {
+  background-color: #ffe0fd;
 }
 
 /* mobile design */
 
 @media (max-width: 40em) {
-  .skillsContainer {
+  .skillsContainer,
+  .qualificationContainer {
     width: 90%;
   }
-  .skillsWrapper {
+  .wrapper {
     padding: 30px 20px;
     gap: 30px;
   }

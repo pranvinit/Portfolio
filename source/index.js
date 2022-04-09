@@ -1,3 +1,4 @@
 import { SKILLS } from "./skills";
+import { EDUCATION, EXPERIENCE } from "./qualifications";
 
-export { SKILLS };
+export { SKILLS, EDUCATION, EXPERIENCE };

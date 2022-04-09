@@ -5,6 +5,10 @@
   border-radius: 20px;
 }
 
+.skill:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .wrapper {
   width: 100%;
   padding: 20px;
@@ -90,7 +94,6 @@
 }
 
 /* mobile design */
-
 @media (max-width: 40em) {
   .skill {
     width: 100%;

@@ -23,7 +23,7 @@ export default function Skill({ skill }) {
   };
 
   return (
-    <div className={styles.skill} id="skills">
+    <div className={styles.skill}>
       <div className={styles.wrapper}>
         <div className={styles.info}>
           <img
