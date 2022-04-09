@@ -3,7 +3,8 @@
 }
 
 .heroContainer {
-  min-height: calc(100vh - 80px);
+  padding-top: 50px;
+  min-height: calc(100vh);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +13,7 @@
 }
 .videoWrapper {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh);
   position: absolute;
   z-index: -999;
   top: 0;
@@ -42,7 +43,8 @@
 }
 
 .skillsContainer,
-.qualificationContainer {
+.qualificationContainer,
+.projectsContainer {
   width: 80%;
   border-radius: 10px;
   background-color: #e0edff;
@@ -80,11 +82,16 @@
   background-color: #ffe0fd;
 }
 
+.projectsContainer {
+  background-color: #ffe3e0;
+}
+
 /* mobile design */
 
 @media (max-width: 40em) {
   .skillsContainer,
-  .qualificationContainer {
+  .qualificationContainer,
+  .projectsContainer {
     width: 90%;
   }
   .wrapper {

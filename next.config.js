@@ -1,9 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  experimental: {
-    styledComponents: true,
+module.exports = {
+  env: {
+    MONGO_URI:
+      "mongodb+srv://pranavOne:pranavTwo@cluster0.f9ksh.mongodb.net/Portfolio?retryWrites=true&w=majority",
   },
 };
-
-module.exports = nextConfig;

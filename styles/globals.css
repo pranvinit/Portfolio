@@ -10,6 +10,5 @@
 
 .appWrapper {
   min-height: calc(100vh - 140px);
-  padding-top: 80px;
   padding-bottom: 60px;
 }

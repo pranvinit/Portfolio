@@ -1,9 +1,10 @@
 export const EDUCATION = [
   {
-    id: 1,
-    title: "Secondary School",
-    subtitle: "Tapti Public School, Bhusawal",
-    timespan: "2008 - 2018",
+    id: 3,
+
+    title: "BE Information Technology",
+    subtitle: "D. Y. Patil College of Engineering, Pune",
+    timespan: "2020 - 2024",
   },
   {
     id: 2,
@@ -13,11 +14,10 @@ export const EDUCATION = [
     timespan: "2018 - 2020",
   },
   {
-    id: 3,
-
-    title: "BE Information Technology",
-    subtitle: "D. Y. Patil College of Engineering, Pune",
-    timespan: "2020 - 2024",
+    id: 1,
+    title: "Secondary School",
+    subtitle: "Tapti Public School, Bhusawal",
+    timespan: "2008 - 2018",
   },
 ];
 

@@ -18,7 +18,8 @@
 /* utility classes end */
 
 .navbar {
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   width: 100%;
@@ -26,13 +27,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .mobileNavToggle {
   display: none;
 }
 .logo {
+  color: #fff;
   margin-left: 20px;
   font-size: 1.25rem;
   font-weight: 500;
@@ -41,16 +42,19 @@
 
 .primaryNavigation {
   margin-right: 20px;
-  background: #c8c8c840;
-  backdrop-filter: blur(1rem);
   display: flex;
   gap: var(--gap, 50px);
   padding: 10px 20px;
   border-radius: 5px;
+  backdrop-filter: blur(1rem);
+  background: hsl(0 0% 100%/ 0.3);
+  backdrop-filter: blur(1rem);
+
+  color: #6e6e6e6c;
 }
 
 .item a {
-  color: #000;
+  color: #fff;
   font-weight: 600;
   text-decoration: none;
   font-size: clamp(0.95, 20px, 1.15rem);
