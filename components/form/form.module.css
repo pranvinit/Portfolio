@@ -1,0 +1,144 @@
+.form {
+  position: relative;
+  display: flex;
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.wrapper {
+  padding: 20px;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #a0a0a0;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.contactInput {
+  border: none;
+  outline: none;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 20px;
+  font-weight: 500;
+  background-color: #eaeaea;
+}
+
+.contactTextArea {
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+  min-height: 100px;
+  font-weight: 500;
+  background-color: #eaeaea;
+}
+
+.formOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cancelBtn,
+.submitBtn {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 40%;
+  background-color: #0f64f2;
+  padding: 6px 8px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 0 4px 20px -5px #0f64f2;
+  transition: all 200ms ease-in-out;
+}
+
+.cancelBtn {
+  background-color: #ff0000;
+  box-shadow: 0 4px 20px -5px #ff0000;
+}
+
+.submitBtn:hover {
+  background-color: #0a4ec2;
+}
+
+.cancelBtn:hover {
+  background-color: #cc0000;
+}
+
+.loadingProgress {
+  color: #fff !important;
+}
+
+/* mobile design */
+@media (max-width: 40em) {
+  .subtitle {
+    text-align: center;
+    line-height: 1.1;
+  }
+  .form {
+    width: 90%;
+  }
+
+  .bottom {
+    width: 90%;
+    align-items: center;
+  }
+
+  .contactInput {
+    width: 100%;
+  }
+  .contactTextArea {
+    width: calc(100% - 10px);
+  }
+
+  .formOptions {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .cancelBtn,
+  .submitBtn {
+    width: 250px;
+  }
+}
