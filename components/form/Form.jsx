@@ -1,4 +1,5 @@
 import styles from "./form.module.css";
+import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { Mail, Delete } from "@mui/icons-material";
 import autosize from "autosize";
@@ -6,6 +7,7 @@ import axios from "axios";
 import { CircularProgress } from "@mui/material";
 
 export default function Form() {
+  const [showAlert, setShowAlert] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, isError] = useState(null);
 
@@ -37,12 +39,34 @@ export default function Form() {
       await axios.post("/api/contact", { name, email, subject, message });
       handleReset();
       setLoading(false);
+      setShowAlert(true);
     } catch (e) {
       console.log(e);
       setLoading(false);
       isError(e.response.message);
+      setShowAlert(true);
     }
   };
+
+  if (showAlert) {
+    return (
+      <div className={styles.alert}>
+        <span className={styles.message}>Success.</span>
+        <img src="/assets/png/check.png" alt="check" className={styles.check} />
+        <div className={styles.alertOptions}>
+          <button
+            className={styles.backBtn}
+            onClick={() => setShowAlert(false)}
+          >
+            Go back
+          </button>
+          <Link href="/">
+            <button className={styles.homeBtn}>Home</button>
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={styles.form}>

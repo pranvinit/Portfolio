@@ -1,0 +1,59 @@
+.project {
+  padding-top: 80px;
+  min-height: calc(100vh - 140px);
+  background-color: #010203;
+  color: #fff;
+}
+
+.wrapper {
+  width: 60%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.desc {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #d7d7d7;
+}
+
+.center {
+  margin-block: 50px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  margin-bottom: 30px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.linkIcon {
+  transition: all 200ms linear;
+}
+
+.link:hover .linkIcon {
+  color: #0f64f2;
+}
