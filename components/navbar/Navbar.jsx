@@ -132,7 +132,7 @@ export default function Navbar() {
             }`}
             onClick={handleToggle}
           >
-            <Link href="#about">About</Link>
+            <Link href="/#about">About</Link>
           </li>
           <li
             className={`${styles.item} ${
@@ -140,7 +140,7 @@ export default function Navbar() {
             }`}
             onClick={handleToggle}
           >
-            <Link href="#skills">Skills</Link>
+            <Link href="/#skills">Skills</Link>
           </li>
           <li
             className={`${styles.item} ${
@@ -148,7 +148,7 @@ export default function Navbar() {
             }`}
             onClick={handleToggle}
           >
-            <Link href="#qualifications">Qualifications</Link>
+            <Link href="/#qualifications">Qualifications</Link>
           </li>
           <li
             className={`${styles.item} ${
@@ -156,7 +156,7 @@ export default function Navbar() {
             }`}
             onClick={handleToggle}
           >
-            <Link href="#projects">Projects</Link>
+            <Link href="/#projects">Projects</Link>
           </li>
         </ul>
       </nav>

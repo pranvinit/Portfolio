@@ -52,5 +52,11 @@
   .nextArrow {
     width: 40px;
     height: 40px;
+    left: 10px;
+  }
+
+  .nextArrow {
+    left: inherit;
+    right: 10px;
   }
 }

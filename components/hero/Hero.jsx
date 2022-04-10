@@ -15,7 +15,7 @@ export default function Hero() {
     <div className={styles.hero}>
       <div className={styles.wrapper}>
         <div className={styles.top}>
-          <span className={styles.title}>Hi, I'm Pranav Yeole</span>
+          <span className={styles.title}>Hi, &apos; Pranav Yeole</span>
           <span className={styles.tagline}>
             Full Stack Developer | Web &amp; Mobile
           </span>
@@ -33,12 +33,20 @@ export default function Hero() {
           </Link>
           <ul className={styles.contactList}>
             <li className={styles.contact}>
-              <a href="https://www.instagram.com/_pranv_/" target="_blank">
+              <a
+                href="https://www.instagram.com/_pranv_/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Instagram fontSize="large" />
               </a>
             </li>
             <li className={styles.contact}>
-              <a href="https://twitter.com/pranv21" target="_blank">
+              <a
+                href="https://twitter.com/pranv21"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Twitter fontSize="large" />
               </a>
             </li>
@@ -46,12 +54,17 @@ export default function Hero() {
               <a
                 href="https://www.linkedin.com/in/pranav-yeole-3aab14215/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <LinkedIn fontSize="large" />
               </a>
             </li>
             <li className={styles.contact}>
-              <a href="https://www.github.com/pranvinit/" target="_blank">
+              <a
+                href="https://www.github.com/pranvinit/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <GitHub fontSize="large" />
               </a>
             </li>
@@ -59,6 +72,7 @@ export default function Hero() {
               <a
                 href="https://www.youtube.com/channel/UC-n2pLjaBS7s72Fgtwsun7Q"
                 target="_blank"
+                rel="noreferrer"
               >
                 <YouTube fontSize="large" />
               </a>

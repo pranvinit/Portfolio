@@ -1,5 +1,6 @@
 import styles from "./project.module.css";
 import Link from "next/link";
+
 import { GitHub, Link as LinkIcon } from "@mui/icons-material";
 
 export default function Project({ project }) {

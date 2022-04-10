@@ -51,18 +51,24 @@ export default function Form() {
   if (showAlert) {
     return (
       <div className={styles.alert}>
-        <span className={styles.message}>Success.</span>
-        <img src="/assets/png/check.png" alt="check" className={styles.check} />
-        <div className={styles.alertOptions}>
-          <button
-            className={styles.backBtn}
-            onClick={() => setShowAlert(false)}
-          >
-            Go back
-          </button>
-          <Link href="/">
-            <button className={styles.homeBtn}>Home</button>
-          </Link>
+        <div className={styles.alertWrapper}>
+          <span className={styles.message}>Success.</span>
+          <img
+            src="/assets/png/check.png"
+            alt="check"
+            className={styles.check}
+          />
+          <div className={styles.alertOptions}>
+            <button
+              className={styles.backBtn}
+              onClick={() => setShowAlert(false)}
+            >
+              Go back
+            </button>
+            <Link href="/">
+              <button className={styles.homeBtn}>Home</button>
+            </Link>
+          </div>
         </div>
       </div>
     );

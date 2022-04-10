@@ -92,6 +92,10 @@
     gap: 30px;
   }
 
+  .topText {
+    width: 70%;
+  }
+
   .projectImg {
     width: 90%;
   }

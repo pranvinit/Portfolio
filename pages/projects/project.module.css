@@ -57,3 +57,23 @@
 .link:hover .linkIcon {
   color: #0f64f2;
 }
+
+/* mobile design */
+@media (max-width: 40em) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .center {
+    margin-block: 20px;
+  }
+
+  .video {
+    height: 250px;
+  }
+}

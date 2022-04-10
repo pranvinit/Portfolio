@@ -3,6 +3,6 @@ module.exports = {
     MONGO_URI:
       "mongodb+srv://pranavOne:pranavTwo@cluster0.f9ksh.mongodb.net/Portfolio?retryWrites=true&w=majority",
     SENDGRID_API_KEY:
-      "ENTER YOUR SENDGRID KEY HERE",
+      "SG.djuGwCLdREilDG6WSmBREQ.CBvCkuCuwcS8RDNVvl20GGWbojD6t6xmdhxRj7ShKMk",
   },
 };
