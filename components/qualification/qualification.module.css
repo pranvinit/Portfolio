@@ -108,6 +108,7 @@
 
   .item {
     width: 100%;
+    padding-inline: 10px;
     align-self: center;
     transition: all 200ms ease-in-out;
   }
