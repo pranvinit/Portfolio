@@ -2,8 +2,20 @@
   position: relative;
 }
 
+.scrollTop {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  top: 85%;
+}
+
 .heroContainer {
-  padding-top: 50px;
+  padding-top: 40px;
   min-height: calc(100vh);
   display: flex;
   flex-direction: column;
@@ -11,7 +23,7 @@
   justify-content: center;
   gap: 50px;
 }
-.videoWrapper {
+.heroBGVideoWrapper {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -24,6 +36,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.homeBG {
+  width: 100%;
+  height: calc(100% - 100vh + 50px);
+  position: absolute;
+  z-index: -999;
+  top: 100vh;
+  overflow: hidden;
 }
 
 .scrollDownText {
@@ -46,10 +67,11 @@
 .qualificationContainer,
 .projectsContainer {
   width: 80%;
-  border-radius: 10px;
-  background-color: #e0edff;
+  background-color: #3eead0;
+  color: #fff;
   margin: 0 auto;
   margin-top: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .wrapper {
@@ -74,16 +96,15 @@
 
 .desc {
   font-size: 1.25rem;
-  font-weight: 300;
-  color: #a0a0a0;
+  color: #f2f2f2;
 }
 
 .qualificationContainer {
-  background-color: #ffe0fd;
+  background-color: #ff2969;
 }
 
 .projectsContainer {
-  background-color: #ffe3e0;
+  background-color: #293bff;
   margin-bottom: 50px;
 }
 

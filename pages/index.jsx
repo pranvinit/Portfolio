@@ -1,5 +1,13 @@
 import styles from "../styles/home.module.css";
-import { KeyboardDoubleArrowDown } from "@mui/icons-material";
+import {
+  KeyboardDoubleArrowDown,
+  KeyboardDoubleArrowUp,
+} from "@mui/icons-material";
+import { Fab } from "@mui/material";
+import { useRef, useEffect } from "react";
+
+// animation imports
+import { motion } from "framer-motion";
 
 const Project = require("../server/models/Project");
 const connectDB = require("../server/db/connect");
@@ -14,15 +22,45 @@ import Carousel from "../components/carousel/Carousel";
 // skill data import
 import { SKILLS } from "../source";
 
+// variants imports
+import { DROPDOWN } from "../variants/Variants";
+
 export default function Home({ projects, nbHits }) {
+  const scrollTop = useRef();
+
+  const setShowScrollTop = (y) => {
+    if (!scrollTop.current) return;
+    if (y >= 750) {
+      scrollTop.current.style.display = "flex";
+    } else {
+      scrollTop.current.style.display = "none";
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => setShowScrollTop(window.scrollY));
+
+    return () => {
+      window.removeEventListener("scroll", () =>
+        setShowScrollTop(window.scrollY)
+      );
+    };
+  }, []);
+
   return (
     <div className={styles.home}>
-      <div className={styles.videoWrapper}>
+      <div className={styles.heroBGVideoWrapper}>
         <video autoPlay loop muted className={styles.heroBGVideo}>
           <source src="/assets/bg-videos/hero-bg.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className={styles.heroContainer}>
+      <div className={styles.homeBG}></div>
+      <motion.div
+        className={styles.heroContainer}
+        variants={DROPDOWN}
+        initial="initial"
+        animate="animate"
+      >
         <Hero />
         <span
           className={styles.scrollDownText}
@@ -30,7 +68,7 @@ export default function Home({ projects, nbHits }) {
         >
           <KeyboardDoubleArrowDown fontSize="large" /> Scroll Down
         </span>
-      </div>
+      </motion.div>
       <About />
       <div className={styles.skillsContainer} id="skills">
         <div className={styles.wrapper}>
@@ -63,6 +101,15 @@ export default function Home({ projects, nbHits }) {
           </div>
         </div>
       </div>
+      <Fab
+        color="primary"
+        aria-label="scroll top"
+        className={styles.scrollTop}
+        ref={scrollTop}
+        onClick={() => window.scrollTo(0, 0)}
+      >
+        <KeyboardDoubleArrowUp />
+      </Fab>
     </div>
   );
 }

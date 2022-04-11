@@ -1,5 +1,5 @@
 .project {
-  padding-top: 80px;
+  padding-top: 70px;
   min-height: calc(100vh - 140px);
   background-color: #010203;
   color: #fff;
@@ -48,6 +48,8 @@
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 
 .linkIcon {

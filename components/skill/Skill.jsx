@@ -2,6 +2,8 @@ import styles from "./skill.module.css";
 import { useState } from "react";
 import { KeyboardArrowUp, KeyboardArrowDown } from "@mui/icons-material";
 
+import { AnimatePresence, motion } from "framer-motion";
+
 export default function Skill({ skill }) {
   const [expanded, setExpanded] = useState(false);
 
@@ -9,14 +11,10 @@ export default function Skill({ skill }) {
     switch (type) {
       case "Languages":
         return "pl.png";
-        break;
       case "Libraries & Frameworks":
         return "lib.png";
-        break;
       case "Tools":
         return "tools.png";
-        break;
-
       default:
         break;
     }
@@ -55,13 +53,13 @@ export default function Skill({ skill }) {
           <div className={styles.expanded}>
             <div className={styles.skillContainer}>
               {skill.data.map((i) => (
-                <div className={styles.item} key={i}>
+                <div className={styles.item} key={i.name}>
                   <img
                     className={styles.itemImg}
-                    src="/assets/png/lib.png"
+                    src={`/assets/${i.icon}`}
                     alt="item"
                   />
-                  <span className={styles.itemTitle}>{i}</span>
+                  <span className={styles.itemTitle}>{i.name}</span>
                 </div>
               ))}
             </div>

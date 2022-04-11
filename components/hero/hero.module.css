@@ -1,9 +1,10 @@
 .hero {
   width: 60%;
-  border-radius: 20px;
-  background-color: #fff;
+  backdrop-filter: blur(1rem);
+  background: hsl(0 0% 100%/ 0.1);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 0 auto;
+  color: #fff;
 }
 
 .wrapper {
@@ -33,13 +34,12 @@
 .desc {
   font-size: 18px;
   font-weight: 300;
-  color: #a0a0a0;
 }
 
 .bottom {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .contactBtn {
@@ -54,7 +54,6 @@
   color: #fff;
   font-size: 1.5rem;
   font-weight: 600;
-  border-radius: 5px;
   margin: 0 auto;
   cursor: pointer;
   box-shadow: 0 4px 20px -5px #0f64f2;
@@ -77,7 +76,7 @@
 
 .contact a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 /* mobile design */

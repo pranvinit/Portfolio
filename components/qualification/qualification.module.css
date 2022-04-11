@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+  color: #000;
 }
 
 .top {
@@ -12,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #fff;
 }
 
 .icon {
@@ -46,12 +48,22 @@
   flex-direction: column;
   border-radius: 10px;
   align-self: flex-end;
-  background-color: #fff2e0;
-  transition: all 200ms ease-in-out;
+  background: hsl(0 0% 100%/ 0.5);
+  backdrop-filter: blur(1rem);
+  transition: transform 500ms ease-in-out;
+  cursor: default;
+}
+
+.item:hover {
+  transform: translateX(50px);
 }
 
 .item:nth-child(odd) {
   align-self: flex-start;
+}
+
+.item:nth-child(odd):hover {
+  transform: translateX(-50px);
 }
 
 .item:hover {
@@ -73,7 +85,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #a0a0a0;
+  color: #010203;
   font-size: 14px;
 }
 
@@ -97,10 +109,19 @@
   .item {
     width: 100%;
     align-self: center;
+    transition: all 200ms ease-in-out;
   }
 
   .item:nth-child(odd) {
     align-self: center;
+  }
+
+  .item:hover {
+    transform: translateX(0);
+  }
+
+  .item:nth-child(odd):hover {
+    transform: translateX(0);
   }
 
   .title {

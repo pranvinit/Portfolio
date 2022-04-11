@@ -15,7 +15,7 @@ export default function Hero() {
     <div className={styles.hero}>
       <div className={styles.wrapper}>
         <div className={styles.top}>
-          <span className={styles.title}>Hi, &apos; Pranav Yeole</span>
+          <span className={styles.title}>Hi, I&apos;m Pranav Yeole</span>
           <span className={styles.tagline}>
             Full Stack Developer | Web &amp; Mobile
           </span>

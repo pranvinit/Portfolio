@@ -3,9 +3,9 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 30px;
-  background-color: #e3e0ff;
+  background: hsl(0 0% 100%/ 0.4);
+  backdrop-filter: blur(1rem);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 10px;
 }
 
 .prevArrow,
@@ -24,6 +24,7 @@
   transform: translateY(-50%);
   cursor: pointer;
   transition: all 200ms ease-in-out;
+  color: #000;
 }
 .nextArrow {
   left: inherit;

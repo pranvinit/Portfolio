@@ -9,26 +9,7 @@ export default function Navbar() {
   const navToggle = useRef();
 
   // dynamic navbar style
-  const [isMobile, setIsMobile] = useState(false);
   const [iconColor, setIconColor] = useState("#fff");
-
-  const handleWindowSizeChange = () => {
-    if (typeof window !== "undefined" && window.innerWidth <= 768) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
-
-  useEffect(() => {
-    if (window.innerWidth <= 768) {
-      setIsMobile(true);
-    }
-    window.addEventListener("resize", handleWindowSizeChange);
-    return () => {
-      window.removeEventListener("resize", handleWindowSizeChange);
-    };
-  }, []);
 
   const navbar = useRef();
   const primaryNav = useRef();
@@ -48,9 +29,6 @@ export default function Navbar() {
     logo.current.style.color = "#fff";
     navbar.current.style = "inherit";
     primaryNav.current.style = "inherit";
-    if (isMobile) {
-      primaryNav.current.style.backgroundColor = "#000000bf";
-    }
   };
 
   const setNavbarStyle = (y) => {
@@ -60,11 +38,6 @@ export default function Navbar() {
       resetNavbarStyle();
     }
   };
-
-  useEffect(() => {
-    if (!isMobile) return;
-    primaryNav.current.style.backgroundColor = "#000000bf";
-  }, [isMobile]);
 
   useEffect(() => {
     window.addEventListener("scroll", () => setNavbarStyle(window.scrollY));

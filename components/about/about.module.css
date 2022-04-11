@@ -1,8 +1,9 @@
 .about {
   width: 80%;
-  border-radius: 10px;
   margin: 0 auto;
-  background-color: #e0fcff;
+  background-color: #8528ff;
+  color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .wrapper {
@@ -25,7 +26,7 @@
 .desc {
   font-size: 1.25rem;
   font-weight: 300;
-  color: #a0a0a0;
+  color: #f2f2f2;
 }
 
 .bottom {
@@ -44,7 +45,7 @@
 .introduction {
   font-size: 18px;
   font-weight: 300;
-  color: #a0a0a0;
+  color: #f2f2f2;
 }
 
 .resumeBtn {

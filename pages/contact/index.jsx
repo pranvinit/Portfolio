@@ -1,6 +1,10 @@
 import Form from "../../components/form/Form";
 import styles from "./contact.module.css";
 
+// animation imports
+import { motion } from "framer-motion";
+import { DROPDOWN } from "../../variants/Variants";
+
 export default function Contact() {
   return (
     <>
@@ -10,7 +14,9 @@ export default function Contact() {
             <source src="/assets/bg-videos/contact-bg.mp4" type="video/mp4" />
           </video>
         </div>
-        <Form />
+        <motion.div variants={DROPDOWN} initial="initial" animate="animate">
+          <Form />
+        </motion.div>
       </div>
     </>
   );

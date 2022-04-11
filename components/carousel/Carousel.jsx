@@ -28,10 +28,18 @@ export default function Carousel({ data }) {
         <Project project={projects[index]} key={index} />
       </div>
       <div className={styles.prevArrow}>
-        <ArrowLeft fontSize="large" onClick={handlePrev} />
+        <ArrowLeft
+          className={styles.icon}
+          fontSize="large"
+          onClick={handlePrev}
+        />
       </div>
       <div className={styles.nextArrow}>
-        <ArrowRight fontSize="large" onClick={handleNext} />
+        <ArrowRight
+          className={styles.icon}
+          fontSize="large"
+          onClick={handleNext}
+        />
       </div>
     </div>
   );

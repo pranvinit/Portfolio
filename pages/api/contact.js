@@ -10,6 +10,7 @@ const contactController = async (req, res) => {
         ${message}
         `;
     await sendEmail({ to: "pranvofficial@gmail.com", subject, html });
+    console.log("hello this is working");
     res.status(200).json({ message: "Success" });
   } catch (e) {
     console.log(e);

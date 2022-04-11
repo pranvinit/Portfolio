@@ -22,6 +22,9 @@ const ProjectSchema = mongoose.Schema(
     images: {
       type: [String],
     },
+    video: {
+      type: String,
+    },
     batches: {
       type: [String],
     },

@@ -4,22 +4,19 @@ const ProjectModel = require("../../server/models/Project");
 
 import { GitHub, Link as LinkIcon } from "@mui/icons-material";
 
-export default function Project({ project }) {
+export default function Project({ data }) {
+  const project = JSON.parse(data);
   return (
     <div className={styles.project}>
       <div className={styles.wrapper}>
         <div className={styles.top}>
           <span className={styles.title}>{project.title}</span>
-          <span className={styles.desc}>
-            Lorem, ipsum Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Ipsam doloremque vel nihil architecto! Dolore alias dolorem
-            amet soluta, obcaecati quas.
-          </span>
+          <span className={styles.desc}>{project.description}</span>
         </div>
         <div className={styles.center}>
           <iframe
             className={styles.video}
-            src="https://www.youtube.com/embed/omWmWu1XO8U"
+            src={project.video}
             width="100%"
             height="500px"
             frameBorder="0"
@@ -27,14 +24,26 @@ export default function Project({ project }) {
           ></iframe>
         </div>
         <div className={styles.bottom}>
-          <span className={styles.link}>
+          <a
+            href={project.githubRepository}
+            className={styles.link}
+            target="_blank"
+            rel="noreferrer"
+          >
             Github Repository
             <GitHub className={styles.linkIcon} fontSize="large" />
-          </span>
-          <span className={styles.link}>
-            Hosted On
-            <LinkIcon className={styles.linkIcon} fontSize="large" />
-          </span>
+          </a>
+          {project.hostedOn && (
+            <a
+              href={project.hostedOn}
+              className={styles.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Hosted On
+              <LinkIcon className={styles.linkIcon} fontSize="large" />
+            </a>
+          )}
         </div>
       </div>
     </div>
@@ -80,14 +89,14 @@ export async function getStaticProps({ params }) {
     }
   };
 
-  const project = await getProject();
-  if (!project) {
+  const data = await getProject();
+  if (!data) {
     return { notFound: true };
   }
 
   return {
     props: {
-      project,
+      data,
     },
     revalidate: 60 * 30,
   };
