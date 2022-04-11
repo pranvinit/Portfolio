@@ -11,7 +11,17 @@
   right: 50px;
   width: 70px;
   height: 70px;
+  background-color: #0b4ec1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 50%;
+  color: #fff;
   top: 85%;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.scrollTop:hover {
+  background-color: #3e81f4;
 }
 
 .heroContainer {
@@ -118,6 +128,7 @@
 
 @media (max-width: 40em) {
   .heroContainer {
+    padding-top: 30px;
     gap: 30px;
     margin-bottom: 10px;
   }
@@ -131,7 +142,7 @@
   }
 
   .wrapper {
-    padding: 30px 20px;
+    padding: 30px 10px;
     gap: 30px;
   }
 
@@ -140,7 +151,8 @@
   }
 
   .scrollTop {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    right: 30px;
   }
 }

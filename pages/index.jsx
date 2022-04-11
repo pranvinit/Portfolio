@@ -102,15 +102,13 @@ export default function Home({ projects, nbHits }) {
           </div>
         </div>
       </div>
-      <Fab
-        color="primary"
-        aria-label="scroll top"
+      <div
         className={styles.scrollTop}
         ref={scrollTop}
         onClick={() => window.scrollTo(0, 0)}
       >
         <KeyboardDoubleArrowUp />
-      </Fab>
+      </div>
     </div>
   );
 }
