@@ -15,7 +15,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 50%;
   color: #fff;
-  top: 85%;
+  top: 85vh;
   cursor: pointer;
   transition: all 200ms linear;
 }

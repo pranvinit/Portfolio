@@ -21,9 +21,7 @@ export default function About() {
             <span className={styles.introduction}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
               ullam ipsam! Nobis nisi rerum saepe illo quidem cupiditate
-              possimus neque provident, corrupti qui, sapiente aut recusandae
-              asperiores amet esse odio magni voluptates voluptatem ex, porro
-              eius doloribus animi illum. Tenetur eos, at error dolore
+              possimus neque provident, corr
             </span>
           </div>
           <button className={styles.resumeBtn}>
