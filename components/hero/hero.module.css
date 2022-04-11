@@ -84,11 +84,34 @@
   .hero {
     width: 90%;
   }
+
+  .wrapper {
+    padding-block: 30px;
+    gap: 20px;
+  }
+
   .title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .tagline {
+    font-size: 1.25rem;
     line-height: 1.15;
   }
+
+  .desc {
+    font-size: 12px;
+  }
+
   .contactBtn {
     width: 100%;
+    padding-block: 4px;
+    font-size: 1.25rem;
+  }
+
+  .bottom {
+    gap: 20px;
   }
 }

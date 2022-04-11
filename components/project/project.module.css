@@ -118,8 +118,8 @@
   }
 
   .batch {
-    width: 100px;
     padding: 4px 6px;
+    font-size: 12px;
   }
 
   .title,

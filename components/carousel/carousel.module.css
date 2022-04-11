@@ -45,6 +45,7 @@
 /* mobile design */
 @media (max-width: 40em) {
   .carousel {
+    margin-top: 20px;
     width: 100%;
     padding-block: 30px;
   }

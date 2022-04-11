@@ -73,7 +73,7 @@
 /* mobile design */
 @media (max-width: 40em) {
   .about {
-    width: 90%;
+    width: 95%;
   }
 
   .wrapper {
