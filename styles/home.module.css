@@ -26,7 +26,7 @@
 
 .heroContainer {
   padding-top: 50px;
-  min-height: calc(100vh - 50px);
+  height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,6 +131,8 @@
     padding-top: 30px;
     gap: 30px;
     margin-bottom: 10px;
+    min-height: calc(100vh - 30px);
+    margin-bottom: 20px;
   }
 
   .skillsContainer,
