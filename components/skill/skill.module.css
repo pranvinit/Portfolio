@@ -104,6 +104,11 @@
     width: 90%;
   }
 
+  .itemTitle {
+    font-size: 1.25rem;
+    line-height: 1.1;
+  }
+
   .type {
     line-height: 1.1;
   }

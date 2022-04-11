@@ -164,12 +164,12 @@
     line-height: 1.1;
   }
   .form {
-    width: 90%;
-    margin-top: 0;
+    width: 95%;
+    margin-top: 20px;
   }
 
   .wrapper {
-    width: 90%;
+    width: 95%;
   }
 
   .bottom {
@@ -185,8 +185,8 @@
   .contactTextArea {
     width: calc(100% - 10px);
     padding-left: 10px;
-    min-height: 60px;
-    height: 60px;
+    min-height: 75px;
+    height: 75px;
   }
 
   .formOptions {
