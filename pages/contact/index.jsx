@@ -9,6 +9,7 @@ export default function Contact() {
   return (
     <>
       <div className={styles.contact}>
+        <div className={styles.fallbackBG}></div>
         <div className={styles.videoWrapper}>
           <video autoPlay loop muted className={styles.contactBGVideo}>
             <source src="/assets/bg-videos/contact-bg.mp4" type="video/mp4" />

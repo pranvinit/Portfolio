@@ -1,6 +1,5 @@
 import styles from "./project.module.css";
 import Link from "next/link";
-import Image from "next/image";
 
 import { GitHub, Link as LinkIcon } from "@mui/icons-material";
 
@@ -15,14 +14,10 @@ export default function Project({ project }) {
         <Link href={`/projects/${project._id}`}>
           <div className={styles.top}>
             <div className={styles.imgContainer}>
-              <Image
+              <img
                 className={styles.projectImg}
                 src={project.images[0]}
                 alt="project"
-                width={600}
-                height={400}
-                layout="raw"
-                quality={100}
               />
             </div>
             <div className={styles.topText}>

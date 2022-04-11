@@ -1,8 +1,6 @@
 import styles from "./about.module.css";
 import { Article } from "@mui/icons-material";
 
-import Image from "next/image";
-
 export default function About() {
   return (
     <div className={styles.about} id="about">
@@ -13,13 +11,10 @@ export default function About() {
         </div>
         <div className={styles.bottom}>
           <div className={styles.bottomLeft}>
-            <Image
+            <img
               src="/assets/about.jpg"
               alt="about"
               className={styles.aboutImg}
-              width={200}
-              height={200}
-              layout="raw"
             />
           </div>
           <div className={styles.bottomRight}>

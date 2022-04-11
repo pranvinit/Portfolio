@@ -49,6 +49,7 @@ export default function Home({ projects, nbHits }) {
 
   return (
     <div className={styles.home}>
+      <div className={styles.fallbackBG}></div>
       <div className={styles.heroBGVideoWrapper}>
         <video autoPlay loop muted className={styles.heroBGVideo}>
           <source src="/assets/bg-videos/hero-bg.mp4" type="video/mp4" />

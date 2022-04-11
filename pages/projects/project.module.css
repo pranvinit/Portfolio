@@ -78,4 +78,7 @@
   .video {
     height: 250px;
   }
+  .title {
+    line-height: 1.2;
+  }
 }
