@@ -67,8 +67,6 @@ export async function getStaticPaths() {
     params: { projectId: i._id },
   }));
 
-  console.log(paths);
-
   return {
     paths,
     fallback: "blocking",
