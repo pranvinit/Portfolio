@@ -12,17 +12,17 @@ export default function About() {
         <div className={styles.bottom}>
           <div className={styles.bottomLeft}>
             <img
-              src="/assets/about.jpg"
+              src="/assets/avatar.jpg"
               alt="about"
               className={styles.aboutImg}
             />
           </div>
           <div className={styles.bottomRight}>
             <span className={styles.introduction}>
-              Hey there. 👋🏼 I&apos;m Pranav Yeole, a self taught developer and a
-              engineering sophomore pursuing Bachelor of Engineering degree in
-              Information Technology. 😉 I develop modern and efficient web and
-              mobile applications using cutting edge technologies. 😁
+              Hey there 👋 , I&apos;m Pranav. I develop modern and efficient Web
+              and Mobile applications. I ❤️ working with JavaScript and Python
+              frameworks like React, React Native, Django. I have built and
+              hosted several Full Stack projects using these technologies.
             </span>
           </div>
           <button className={styles.resumeBtn}>

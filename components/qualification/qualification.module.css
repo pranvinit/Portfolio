@@ -41,7 +41,7 @@
 }
 
 .item {
-  width: 50%;
+  width: 60%;
   border-radius: 10px;
   align-self: flex-end;
   background: hsl(0 0% 100%/ 0.5);
@@ -76,7 +76,7 @@
 
 .title {
   font-size: 1.75rem;
-  line-height: 1.25;
+  line-height: 1.2;
   margin-bottom: 10px;
   font-weight: 600;
 }

@@ -1,7 +1,8 @@
 .contact {
   position: relative;
   padding-top: 80px;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 130px);
+  padding-bottom: 50px;
 }
 
 .videoWrapper,
@@ -23,11 +24,4 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-@media (max-width: 40em) {
-  .contact {
-    height: calc(100vh - 150px);
-    padding-top: 150px;
-  }
 }
