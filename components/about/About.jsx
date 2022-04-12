@@ -25,9 +25,15 @@ export default function About() {
               hosted several Full Stack projects using these technologies.
             </span>
           </div>
-          <button className={styles.resumeBtn}>
-            Resume <Article />
-          </button>
+          <a
+            className={styles.resumeLink}
+            href="/resume/pranav-yeole.pdf"
+            download="Pranav-Resume"
+          >
+            <button className={styles.resumeBtn}>
+              Resume <Article />
+            </button>
+          </a>
         </div>
       </div>
     </div>
