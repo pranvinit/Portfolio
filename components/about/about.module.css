@@ -73,10 +73,15 @@
 /* mobile design */
 @media (max-width: 40em) {
   .about {
-    width: 95%;
+    width: 100%;
   }
-  .introduction {
+
+  .bottomRight {
+    width: 80%;
     text-align: center;
+  }
+
+  .introduction {
     font-size: 16px;
     font-weight: 500;
   }

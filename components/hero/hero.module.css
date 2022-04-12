@@ -82,16 +82,15 @@
 /* mobile design */
 @media (max-width: 40em) {
   .hero {
-    width: 90%;
+    width: 95%;
   }
 
   .wrapper {
-    padding: 30px;
+    padding: 50px 20px;
     gap: 20px;
   }
 
   .title {
-    font-size: 1.75rem;
     line-height: 1.2;
     margin-bottom: 10px;
   }
@@ -102,13 +101,17 @@
   }
 
   .desc {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .contactBtn {
     width: 100%;
     padding-block: 4px;
     font-size: 1.25rem;
+  }
+
+  .contactList {
+    gap: 15px;
   }
 
   .bottom {

@@ -40,13 +40,15 @@ export default function Qualification() {
       <div className={styles.bottom}>
         {data.map((d, i) => (
           <div className={styles.item} key={d.id}>
-            <span className={styles.title}>{d.title}</span>
-            <span className={styles.subtitle}>{d.subtitle}</span>
-            {type === "education" && (
-              <span className={styles.timespan}>
-                <EventNote /> {d.timespan}
-              </span>
-            )}
+            <div className={styles.wrapper}>
+              <span className={styles.title}>{d.title}</span>
+              <span className={styles.subtitle}>{d.subtitle}</span>
+              {type === "education" && (
+                <span className={styles.timespan}>
+                  <EventNote /> {d.timespan}
+                </span>
+              )}
+            </div>
           </div>
         ))}
       </div>

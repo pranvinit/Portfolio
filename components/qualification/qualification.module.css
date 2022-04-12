@@ -41,17 +41,21 @@
 }
 
 .item {
-  position: relative;
-  padding: 20px;
   width: 50%;
-  display: flex;
-  flex-direction: column;
   border-radius: 10px;
   align-self: flex-end;
   background: hsl(0 0% 100%/ 0.5);
   backdrop-filter: blur(1rem);
   transition: transform 500ms ease-in-out;
   cursor: default;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
 }
 
 .item:hover {
@@ -71,7 +75,9 @@
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
@@ -95,12 +101,9 @@
     width: 100%;
   }
 
-  .top {
-    width: 100%;
-  }
-
+  .top,
   .bottom {
-    width: 90%;
+    width: 100%;
   }
   .typeTitle {
     font-size: 1.15rem;
@@ -108,7 +111,6 @@
 
   .item {
     width: 100%;
-    padding-inline: 10px;
     align-self: center;
     transition: all 200ms ease-in-out;
   }
@@ -127,7 +129,6 @@
   }
 
   .title {
-    line-height: 1.25;
     margin-bottom: 10px;
   }
 }

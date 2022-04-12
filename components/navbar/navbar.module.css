@@ -47,7 +47,6 @@
   padding: 10px 20px;
   backdrop-filter: blur(1rem);
   background: hsl(0 0% 100%/ 0.3);
-  backdrop-filter: blur(1rem);
 }
 
 .item a {

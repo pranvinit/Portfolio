@@ -19,9 +19,10 @@ export default function About() {
           </div>
           <div className={styles.bottomRight}>
             <span className={styles.introduction}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-              ullam ipsam! Nobis nisi rerum saepe illo quidem cupiditate
-              possimus neque provident, corr
+              Hey there. 👋🏼 I&apos;m Pranav Yeole, a self taught developer and a
+              engineering sophomore pursuing Bachelor of Engineering degree in
+              Information Technology. 😉 I develop modern and efficient web and
+              mobile applications using cutting edge technologies. 😁
             </span>
           </div>
           <button className={styles.resumeBtn}>

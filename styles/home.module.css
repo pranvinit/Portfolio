@@ -1,5 +1,6 @@
 .home {
   position: relative;
+  padding-bottom: 50px;
 }
 
 .scrollTop {
@@ -44,6 +45,7 @@
   overflow: hidden;
 }
 .fallbackBG {
+  height: 100%;
   background-color: #010203;
   z-index: -999;
 }
@@ -121,17 +123,19 @@
 
 .projectsContainer {
   background-color: #293bff;
-  margin-bottom: 50px;
 }
 
 /* mobile design */
 
 @media (max-width: 40em) {
+  .home {
+    padding-bottom: 10px;
+  }
+
   .heroContainer {
-    padding-top: 30px;
+    padding-top: 0;
     gap: 30px;
-    margin-bottom: 10px;
-    min-height: calc(100vh - 30px);
+    min-height: calc(100vh);
     margin-bottom: 20px;
   }
 
@@ -139,7 +143,7 @@
   .qualificationContainer,
   .projectsContainer,
   .aboutContainer {
-    width: 95%;
+    width: 100%;
     margin-top: 10px;
   }
 
@@ -148,13 +152,10 @@
     gap: 30px;
   }
 
-  .projectsContainer {
-    margin-bottom: 10px;
-  }
-
   .scrollTop {
     width: 60px;
     height: 60px;
     right: 30px;
+    top: 75vh;
   }
 }
