@@ -1,7 +1,7 @@
 .contact {
   position: relative;
   padding-top: 80px;
-  min-height: calc(100vh - 130px);
+  height: calc(100vh - 130px);
   padding-bottom: 50px;
 }
 
@@ -24,4 +24,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 40em) {
+  .contact {
+    height: calc(100vh - 160px);
+    padding-top: 50px;
+  }
 }
