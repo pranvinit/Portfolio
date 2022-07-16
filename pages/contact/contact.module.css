@@ -29,6 +29,7 @@
 @media (max-width: 40em) {
   .contact {
     height: calc(100vh - 160px);
+    min-height: 600px;
     padding-top: 50px;
   }
 }
