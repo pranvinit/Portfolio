@@ -27,8 +27,8 @@ export default function About() {
           </div>
           <a
             className={styles.resumeLink}
-            href="/resume/pranav-yeole.pdf"
-            download="Pranav-Resume"
+            href="/resume/Pranav_Yeole-resume.pdf"
+            download="Pranav_Yeole-resume"
           >
             <button className={styles.resumeBtn}>
               Resume <Article />
